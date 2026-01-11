@@ -1,35 +1,10 @@
-import React,{ useState } from 'react'
-
 const App = () => {
-  const [count, setCount] = useState(10);
-  console.log(count);
-
-  const increase = () => {
-    setCount(count + 1);
-  }
-
-  const decrease = () => {
-    setCount(count - 1);
-  }
-
-  const reset = () => {
-    setCount(0);
-  }
-  
   return (
-    <div>
-      <div id="counter-box">
-        <h2>
-          Counter: <span>{count}</span>
-        </h2>
-
-        <button onClick={increase}>+</button>
-        <button onClick={decrease}>-</button>
-        <button onClick={reset}>Reset</button>
-      </div>
+    <div className="border-2 border-red-700 w-64 h-64 m-4 flex flex-col justify-center items-center">
+      <div className="border-2 border-blue-700">Manish</div>
+      <div className="border-2 border-green-700">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate in iste repudiandae consequuntur sed odit magnam illum repellendus consectetur nisi, architecto officia velit molestiae rerum, doloremque autem maxime tenetur qui!</div>
     </div>
-    
-  )
-}
+  );
+};
 
-export default App
+export default App;

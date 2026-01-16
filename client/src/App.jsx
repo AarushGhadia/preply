@@ -1,20 +1,32 @@
-import Card from "./components/Card";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Main from "./components/Main";
+
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <div className='flex justify-center gap-8'>
-        <Card name="Air Jordan 4 Retro Reimagined Bred" />
-        <Card name="manish" />
-        <Card name="Arush" />
+    <div>
+      <div className="flex justify-center items-center gap-10">
+        <div>logo</div>
+        <div>
+          <div className="flex justify-between list-none gap-2">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Protfolio</li>
+            <li>Pricing</li>
+          </div>
+        </div>
+        <div>button</div>
       </div>
-
-      <Footer />
-    </>
+      <div className="flex justify-center items-center gap-10">
+        <div>
+          <div>
+            <h1>Heading</h1>
+            <div>Paragraph</div>
+          </div>
+          <div>button</div>
+        </div>
+        <div>Image</div>
+      </div>
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 const App = () => {
   return (
     <div>
-      <div className="flex justify-center items-center gap-100">
+      <div className="flex justify-center items-center">
         <div style={{ marginTop: '50px' }}>Logo</div>
         <div>
           <div className="flex list-none gap-10" style={{ marginLeft: '-300px', marginTop: '50px' }}>

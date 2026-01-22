@@ -19,15 +19,18 @@ function completeTodo(id = 1) {
       return ;
     }
   }
+  return "Todo not found"
 }
 
 function deleteTodo(id = 1) {
   // remove todo by id
-  if (todos.includes(id)) {
-    todos.splice(0, 1);
-  } else {    
-    return "Todo not found";
+  for(let i=0; i<todos.length; i++) {
+    if(todos[i].id === id){
+      todos.splice(i,1);
+      return ;
+    }
   }
+  return "Todo not found"
 }
 
 function resetTodos() {

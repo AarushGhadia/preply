@@ -13,12 +13,11 @@ function getTodos() {
 }
 
 function completeTodo(id = 1) {
-  // find todo by id and mark completed=true
-  console.log(id)
-  if (todos.includes(id)) {
-    todos[0].completed = true;
-  } else {    
-    return "Todo not found";
+  for(let i=0; i<todos.length; i++) {
+    if(todos[i].id === id){
+      todos[i].completed = true;
+      return ;
+    }
   }
 }
 

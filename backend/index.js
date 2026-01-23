@@ -21,7 +21,14 @@ app.get('/',(req,res)=>{
     })
 })
 
-
+app.get('/health',(req,res)=>{
+    return res
+    .status(200)
+    .json({
+        success:true,
+        message:"The backend server is healthy",
+    })
+})
 
 
 app.listen(PORT,()=>{
